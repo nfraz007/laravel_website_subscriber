@@ -67,3 +67,4 @@ php artisan queue:work
 ## Snapshot
 ![snapshot 1](snapshots/snapshot_1.png)
 ![snapshot 2](snapshots/snapshot_2.png)
+![snapshot 3](snapshots/snapshot_3.png)

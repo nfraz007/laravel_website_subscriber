@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "0388cde1-8d26-4fb9-9c57-c71910f187dd",
+		"name": "website_subscriber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/subscribe?email=nfraz007@gmail.com&full_name=Nazish Fraz&url=http://me.nfraz.co.in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"subscribe"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nfraz007@gmail.com"
+						},
+						{
+							"key": "full_name",
+							"value": "Nazish Fraz"
+						},
+						{
+							"key": "url",
+							"value": "http://me.nfraz.co.in"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/subscribe?email=nfraz007@gmail.com&full_name=Nazish Fraz&url=http://me.nfraz.co.in",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"subscribe"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nfraz007@gmail.com"
+								},
+								{
+									"key": "full_name",
+									"value": "Nazish Fraz"
+								},
+								{
+									"key": "url",
+									"value": "http://me.nfraz.co.in"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Oct 2021 18:06:28 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Oct 2021 18:06:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.29-to-be-removed-in-future-macOS"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"you have subscribed.\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "add post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/add_post?url=http://me.nfraz.co.in&title=this is a title&description=this is a dummy description",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add_post"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "http://me.nfraz.co.in"
+						},
+						{
+							"key": "title",
+							"value": "this is a title"
+						},
+						{
+							"key": "description",
+							"value": "this is a dummy description"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/add_post?url=http://me.nfraz.co.in&title=this is a title&description=this is a dummy description",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add_post"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "http://me.nfraz.co.in"
+								},
+								{
+									"key": "title",
+									"value": "this is a title"
+								},
+								{
+									"key": "description",
+									"value": "this is a dummy description"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Oct 2021 18:20:11 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Oct 2021 18:20:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.29-to-be-removed-in-future-macOS"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"post has created.\",\n    \"data\": {\n        \"id\": 9,\n        \"website_id\": 12,\n        \"title\": \"this is a title\",\n        \"description\": \"this is a dummy description\",\n        \"created_at\": \"2021-10-27 18:20:11\",\n        \"updated_at\": \"2021-10-27 18:20:11\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

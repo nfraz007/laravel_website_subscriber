@@ -64,6 +64,9 @@ run queue job server
 php artisan queue:work
 ```
 
+## Postman Collection
+[link](postman/website_subscriber.postman_collection.json)
+
 ## Snapshot
 ![snapshot 1](snapshots/snapshot_1.png)
 ![snapshot 2](snapshots/snapshot_2.png)
